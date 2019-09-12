@@ -4,7 +4,7 @@
     <head>
 
         <?php wp_head();?>
-
+        <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
     </head>
 
 <body <?php body_class();?>>
@@ -13,10 +13,11 @@
   <div>
     <a href="#">
       <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
-    </a>  
+    </a>
     <?php wp_nav_menu(
       array(
-        'menu' => 'top_menu',
+        'menu' => 'top-menu',
+        'theme_location' => 'top-menu',
         'container_class' => 'nav',
         'menu_class' => 'navigation-menu',
         )

@@ -1,6 +1,9 @@
-
+(function($) {
 $(window).load(function() {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    prevText: "",
+    nextText: ""
   });
 });
+})( jQuery );
