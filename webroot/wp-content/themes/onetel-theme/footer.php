@@ -11,8 +11,8 @@
     array(
       'menu' => 'footer-menu',
       'theme_location' => 'footer-menu',
-      'container_class' => 'nav',
-      'menu_class' => 'navigation-menu',
+      'container_class' => 'footer-social',
+      'menu_class' => 'footer-icon',
       )
     );?>
 </footer>

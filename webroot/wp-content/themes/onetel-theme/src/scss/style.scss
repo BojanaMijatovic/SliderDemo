@@ -5,3 +5,19 @@
    Description: Gutenber and Slider Demo
    Version: 1.0
 */
+
+// BASE
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// ABSTRACTS
+@import 'base/base';
+@import 'base/typography';
+
+// COMPONENTS
+@import 'components/media';
+@import 'components/burger';
+@import 'components/navigation';
+
+@import 'layout/header';
+@import 'layout/main';

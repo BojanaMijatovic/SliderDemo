@@ -1,0 +1,1 @@
+!function(o){o(".burger, .nav a").on("click",function(n){o(".nav").slideToggle("open"),o(".container").toggleClass("push"),console.log("hello")})}(jQuery);

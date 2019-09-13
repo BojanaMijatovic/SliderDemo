@@ -1,0 +1,24 @@
+@mixin text($size: null, $weight: null, $color: null) {
+  @if $size != null {
+    font-size: $size;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $color != null {
+    color: $color;
+  }
+}
+
+@mixin container {
+  max-width: 700px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+@mixin unstyle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
