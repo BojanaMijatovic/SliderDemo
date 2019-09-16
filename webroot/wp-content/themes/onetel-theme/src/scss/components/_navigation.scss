@@ -13,12 +13,12 @@
     position: relative;
     display: block;
     border-top: none;
-    top:0;
+    top: 0;
   }
   &__menu {
     @include unstyle-list;
     padding-left: 10px;
-    padding-right:  30px;
+    padding-right: 30px;
     @include breakpoint(brian) {
       float: right;
       padding-right: 0;
@@ -29,13 +29,13 @@
         display: inline-block;
       }
       a {
-          @include text(13px, 400, #f2f2f2);
+          @include text(13px, 400, $nav-border);
           display: block;
           padding: 5px 10px;
           line-height: 40px;
           text-transform: uppercase;
           &:hover {
-            color: #ffa500;
+            color: $card2-background;
           }
         }
       }

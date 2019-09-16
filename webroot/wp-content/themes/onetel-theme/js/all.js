@@ -1,1 +1,1 @@
-!function(e){e(".burger, .nav a").on("click",function(n){e(".nav").slideToggle("open"),e(".container").toggleClass("push")})}(jQuery);
+!function(o){o(window).width()<768&&o(".burger, .nav a").on("click",function(n){o(".nav").slideToggle("open"),o(".container").toggleClass("push")})}(jQuery);
