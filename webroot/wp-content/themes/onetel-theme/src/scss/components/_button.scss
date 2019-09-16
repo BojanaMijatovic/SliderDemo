@@ -1,0 +1,13 @@
+.button a {
+  @include text(13px, 700, #fff);
+  padding: 12px 18px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  transition: all  0.4s ease-in;
+  &:hover {
+    background-color: $button-hover;
+    border-color: $button-hover;
+    color: $hover-text;
+  }
+}
