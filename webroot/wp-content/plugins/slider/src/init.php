@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
  //FRONT CSS AND JS
  function load_slide() {
- 		wp_enqueue_style('slideCSS', plugins_url( '/dist/slide/slide.css', dirname( __FILE__ ) ), array());
+ 		wp_enqueue_style('slideCSS', plugins_url( '/dist/slide/flexslider.css', dirname( __FILE__ ) ), array());
 		wp_enqueue_script('slideJQ', plugins_url( '/dist/slide/jquery.flexslider.js', dirname( __FILE__ ) ), array('jquery'), null, true);
  		wp_enqueue_script('slideJS', plugins_url( '/dist/slide/slides.js', dirname( __FILE__ ) ), array('jquery'), null, true);
 

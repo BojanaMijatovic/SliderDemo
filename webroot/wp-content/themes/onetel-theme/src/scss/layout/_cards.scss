@@ -1,0 +1,18 @@
+.cards {
+  @include container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: -35px;
+  margin-bottom: 30px;
+  text-align: center;
+  transform: translateZ(10px);
+  .wp-block-column:not(:first-child) {
+    margin-left: 0;
+  }
+  @include breakpoint (chris) {
+    flex-wrap: nowrap;
+   }
+}

@@ -1,9 +1,8 @@
 .container {
-  @include container;
   margin-top: -35px;
   padding: 0;
   transition: all 400ms ease-in;
   &.push {
-    margin-top: 200px;
-  }
+    margin-top: 165px;
+  } 
 }

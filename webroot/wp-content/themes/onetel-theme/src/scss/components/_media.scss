@@ -9,7 +9,7 @@
       @content;
     }
   } @else if $point == meg {
-    @media only screen and  (min-width: 800px) {
+    @media only screen and  (min-width: 600px) {
       @content;
     }
   } @else if $point == chris {
