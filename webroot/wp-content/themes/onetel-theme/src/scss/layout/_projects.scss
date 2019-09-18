@@ -21,6 +21,12 @@
         opacity: 1;
       }
     }
+    .page-id-28 & {
+      padding-bottom: 50px;
+      &.wp-block-gallery.columns-3 li.blocks-gallery-item {
+        width: calc((100% - 32px )/4);
+      }
+    }
     @include breakpoint(chris) {
       padding: 0 15px;
     }

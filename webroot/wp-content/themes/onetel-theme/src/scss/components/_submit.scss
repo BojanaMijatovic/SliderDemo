@@ -1,0 +1,15 @@
+.submit {
+  @include text(13px, 700, #fff);
+  padding: 12px 18px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  transition: all  .4s ease-in;
+  .newsleter & {
+    text-transform: uppercase;
+  }
+  &:hover {
+    background-color: $button-hover;
+    border-color: $button-hover;
+    color: $hover-text;
+  }
+}
