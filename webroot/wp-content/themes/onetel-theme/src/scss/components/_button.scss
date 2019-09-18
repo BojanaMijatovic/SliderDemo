@@ -4,7 +4,7 @@
     margin-top: 40px;
     padding: 12px 18px;
     background-color: rgba(0, 0, 0, 0);
-    border: 2px solid #fff;
+    border: $white-border;
     transition: all  .4s ease-in;
     .startup & {
       text-transform: uppercase;

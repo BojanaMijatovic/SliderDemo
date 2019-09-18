@@ -2,8 +2,6 @@
   @include container;
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-content: flex-start;
   padding: 40px 15px;
   background-color: $information-color;
@@ -15,7 +13,7 @@
       color: #999;
       cursor: pointer;
       &:hover {
-          color: #fff;
+        color: #fff;
       }
     }
   }
@@ -31,8 +29,6 @@
   }
   p  {
     padding: 5px;
-    line-height: 22px;
-    color: $text-color;
   }
   .wp-block-column:not(:first-child) {
     margin-left: 0;

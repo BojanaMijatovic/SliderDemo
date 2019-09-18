@@ -13,6 +13,7 @@ h1 {
 
 h2 {
   @include text(30px, 700, #fff);
+  line-height: 45px;
 }
 
 h3 {
@@ -20,11 +21,12 @@ h3 {
 }
 
 h4 {
-  @include text(18px, 700, #fff);
+  @include text(18px, 700, $border-background);
 }
 
 p {
-  @include text(14px, 400, #fff);
+  @include text(14px, 400, $text-color);
+  line-height: 22px;
 }
 
 a {

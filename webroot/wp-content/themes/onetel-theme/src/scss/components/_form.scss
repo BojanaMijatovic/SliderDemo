@@ -2,19 +2,25 @@ input {
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
   outline: none;
+  transition: all .3s ease-in;
   &.email {
     width: 100%;
     padding: 5px 10px;
     color: #fff;
-    border: 2px solid #fff;
+    border: $white-border;
     &:hover {
-      background-color: $form-border;
-      border-color: $form-border;
+      @include mail-border;
     }
     &:focus {
-      background-color: $form-border;
-      border-color: $form-border;
+      @include mail-border
       box-shadow: 0 0 8px rgba(102,175,233,.6);
     }
   }
+   &.name {
+     @include contact-form;
+  }
+}
+
+textarea {
+ @include contact-form;
 }

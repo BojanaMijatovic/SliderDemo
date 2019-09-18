@@ -1,10 +1,6 @@
 .cards {
   @include container;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+  @include flex-row;
   margin-top: -35px;
   margin-bottom: 30px;
   text-align: center;

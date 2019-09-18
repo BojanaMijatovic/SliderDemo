@@ -1,18 +1,14 @@
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column;
   padding: 50px 30px;
   cursor: pointer;
-  transition: all .4s ease-out;
+  transition: $transition;
   &__title {
      padding: 10px 0;
-     line-height: 45px;
-   }
+  }
   &__content {
-     line-height: 22px;
-   }
+    color: #fff;
+  }
   &--responsive {
      background-color: $card1-background;
      @include breakpoint(meg) {
@@ -38,11 +34,11 @@
     padding: 30px 15px 30px 30px;
     text-align: center;
     color: #fff;
-    border: 2px solid #fff;
+    border: $white-border;
     border-radius: 50%;
   }
   .fa-mobile-alt {
-    padding: 30px 25px 30px 40px;
+    padding: 30px 26px 30px 38px;
   }
   .fa-life-ring {
     padding: 30px 19px 30px 32px;

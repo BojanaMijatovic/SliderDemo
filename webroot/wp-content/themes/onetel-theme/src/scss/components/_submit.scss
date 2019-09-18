@@ -1,9 +1,11 @@
 .submit {
   @include text(13px, 700, #fff);
+  margin: 20px 0 10px;
   padding: 12px 18px;
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #fff;
-  transition: all  .4s ease-in;
+  cursor: pointer;
+  transition: $transition;
   .newsleter & {
     text-transform: uppercase;
   }

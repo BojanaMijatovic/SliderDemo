@@ -10,8 +10,6 @@
     }
     &--description {
       padding-bottom: 10px;
-      line-height: 22px;
-      color: $text-color;
     }
   }
   &__work {
@@ -20,26 +18,25 @@
     }
   }
   &__right {
-      position: relative;
-      padding: 30px 0;
-      color: $text-color;
+    position: relative;
+    padding: 30px 0;
+    &::after {
+      content: "100%";
+      position: absolute;
+      top: 20px;
+      right: 10px;
+    }
+    &--bootstrap {
       &::after {
-        content: "100%";
-        position: absolute;
-        top: 20px;
-        right: 10px;
-      }
-      &--bootstrap {
-        &::after {
-          content: "80%";
-        }
-      }
-      &--ux {
-        &::after {
-          content: "70%";
-        }
+        content: "80%";
       }
     }
+    &--ux {
+      &::after {
+        content: "70%";
+      }
+    }
+  }
   &__line {
     position: relative;
     height: 4px;
@@ -60,11 +57,11 @@
         background-color: $progress-bar2;
       }
     }
-  &--third {
-    &::after {
-      width: 80%;
-      background-color: $progress-bar3;
+    &--third {
+      &::after {
+        width: 80%;
+        background-color: $progress-bar3;
+      }
     }
   }
- }
 }

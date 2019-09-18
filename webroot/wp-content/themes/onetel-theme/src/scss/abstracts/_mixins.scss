@@ -32,3 +32,33 @@
   background-color: $information-color;
   z-index: -2;
 }
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin contact-form {
+   width: 100%;
+   margin: 5px 0 30px;
+   padding: 15px;
+   background-color: $navigation-background;
+   border: none;
+   outline: none;
+   &:focus {
+     background-color: $form-focus;
+   }
+ }
+
+ @mixin mail-border {
+   background-color: $form-border;
+   border-color: $form-border;
+ }

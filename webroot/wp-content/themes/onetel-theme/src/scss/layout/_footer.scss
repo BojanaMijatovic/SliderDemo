@@ -1,19 +1,12 @@
 .footer {
   @include container;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  @include flex-row;
   justify-content: space-between;
-  align-items: center;  
-  padding: 40px 15px;
-  &__social {
-    padding: 15px 15px 15px 0;
-  }
+  align-items: center;
+  padding: 20px 15px;
   &__list {
     @include unstyle-list;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex-row;
     justify-content: flex-start;
   }
   a {
@@ -21,7 +14,6 @@
     display: block;
     padding: 20px 20px 20px 0;
   }
-
   p {
     color: $text-color;
   }

@@ -33,13 +33,13 @@
         padding-bottom: 40.25%;
       }
     }
-    &__img {
+   &__img { 
       height: 100%;
       @include breakpoint(brian) {
         height: auto;
         transform: translate(-50%, -50%);
+      }
     }
-   }
    &__text {
      display: block;
      position: absolute;

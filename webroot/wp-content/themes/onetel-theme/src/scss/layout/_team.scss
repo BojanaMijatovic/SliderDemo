@@ -4,13 +4,13 @@
     &:nth-last-child(1) {
       padding-bottom: 80px;
     }
-  @include breakpoint(chris) {
-    &.wp-block-column  {
-      flex-basis: calc(100%/3 - 50px);
-      padding-bottom: 80px;
+    @include breakpoint(chris) {
+      &.wp-block-column  {
+        flex-basis: calc(100%/3 - 50px);
+        padding-bottom: 80px;
+      }
     }
   }
- }
   &__title {
     padding-top: 60px;
   }
@@ -19,16 +19,12 @@
     max-width: 700px;
   }
   &__members {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     padding-top: 40px;
   }
   &__member {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     flex-wrap: nowrap;
     padding: 30px;
     border: 2px solid $team-border;
@@ -37,9 +33,6 @@
     }
     &--job {
       padding-bottom: 25px;
-    }
-    &--description {
-      line-height: 22px;
     }
     &.wp-block-media-text .wp-block-media-text__content {
       padding-left: 0;

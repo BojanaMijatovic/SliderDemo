@@ -1,19 +1,19 @@
 .nav {
-  position: absolute;
   display: none;
-  width: 100%;
+  position: absolute;
   left: 0;
   top: 85px;
+  width: 100%;
   background-color: $navigation-background;
   border-top: 2px solid $nav-border;
   &.open {
     display: block;
   }
   @include breakpoint(brian) {
-    position: relative;
     display: block;
-    border-top: none;
+    position: relative;
     top: 0;
+    border-top: none;
   }
   &__menu {
     @include unstyle-list;
@@ -42,16 +42,16 @@
     .current-menu-item:active {
       background-color: $hover-text;
     }
-    &::before {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: -6px;
-      width: 6px;
-      height: 101%;
-      background-color: $border-background;
-      @include breakpoint(brian) {
-        content: none;
-        }
+  &::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -6px;
+    width: 6px;
+    height: 101%;
+    background-color: $border-background;
+    @include breakpoint(brian) {
+      content: none;
     }
-}
+  }
+} 

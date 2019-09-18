@@ -4,24 +4,24 @@
     @media only screen and (min-width: 520px) {
       @content;
     }
-  } @else if $point == brian {
-    @media only screen and (min-width: 768px) {
-      @content;
-    }
   } @else if $point == meg {
-    @media only screen and  (min-width: 600px) {
+     @media only screen and  (min-width: 600px) {
       @content;
     }
-  } @else if $point == chris {
-    @media only screen and  (min-width: 992px) {
-      @content;
-    }
-  } @else if $point == lois {
-    @media only screen and (min-width: 1024px) {
+  } @else if $point == brian {
+     @media only screen and (min-width: 768px) {
       @content;
     }
   } @else if $point == peter {
-    @media only screen and (min-width: 862px) {
+     @media only screen and (min-width: 862px) {
+      @content;
+    }
+  } @else if $point == chris {
+     @media only screen and  (min-width: 992px) {
+      @content;
+    }
+  } @else if $point == lois {
+     @media only screen and (min-width: 1024px) {
       @content;
     }
   }

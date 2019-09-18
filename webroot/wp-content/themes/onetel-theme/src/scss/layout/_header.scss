@@ -10,6 +10,6 @@ header {
     background-color: $navigation-background;
     border-left: 6px solid $border-background;
     z-index: 10;
-    transition: all .4s ease-in;
+    transition: $transition;
   }
 }

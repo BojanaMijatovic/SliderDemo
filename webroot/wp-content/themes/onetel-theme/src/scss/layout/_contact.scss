@@ -1,0 +1,23 @@
+.contact {
+  @include container;
+  &__title {
+    padding: 70px 0 40px;
+  }
+  &__description {
+    padding-bottom: 30px;
+  }
+  &__form {
+    p {
+      font-weight: 700;
+    }
+  }
+  &__text {
+    margin-bottom: 60px;
+    &--title {
+      padding-top: 20px;
+    }
+    &--info {
+      padding: 15px 0;
+    }
+  }
+}
