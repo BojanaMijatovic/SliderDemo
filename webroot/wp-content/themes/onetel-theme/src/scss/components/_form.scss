@@ -2,7 +2,7 @@ input {
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
   outline: none;
-  transition: all .3s ease-in;
+  transition: all $transition-timing-shorter ease-in;
   &.email {
     width: 100%;
     padding: 5px 10px;

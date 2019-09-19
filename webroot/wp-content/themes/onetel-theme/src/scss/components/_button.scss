@@ -5,7 +5,7 @@
     padding: 12px 18px;
     background-color: rgba(0, 0, 0, 0);
     border: $white-border;
-    transition: all  .4s ease-in;
+    transition: all $transition-timing-longer ease-in;
     .startup & {
       text-transform: uppercase;
     }

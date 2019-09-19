@@ -1,5 +1,6 @@
 .contact {
   @include container;
+  @include padding;
   &__title {
     padding: 70px 0 40px;
   }

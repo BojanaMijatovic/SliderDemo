@@ -18,7 +18,7 @@
     }
   }
   &__link {
-    @include breakpoint(meg) {
+    @include brian {
       padding: 0 15px;
     }
   }
@@ -36,13 +36,13 @@
   .wp-block-column:nth-child(2n) {
     margin-left: 0;
   }
-  @include breakpoint(peter) {
+  @include meg {
     &::before {
-      @include fullwidth;
+      @include fullWidthPseudo;
       left: -100%;
     }
     &::after {
-      @include fullwidth;
+      @include fullWidthPseudo;
       left: 100%;
     }
   }

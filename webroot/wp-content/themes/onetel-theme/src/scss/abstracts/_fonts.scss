@@ -1,0 +1,41 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(http://sliderdemo.loc/wp-content/themes/onetel-theme/fonts/Montserrat/Montserrat-Light.ttf),
+         url(http://sliderdemo.loc/wp-content/themes/onetel-theme/fonts/Montserrat/Montserrat-Regular.ttf),
+         url(http://sliderdemo.loc/wp-content/themes/onetel-theme/fonts/Montserrat/Montserrat-Medium.ttf),
+         url(http://sliderdemo.loc/wp-content/themes/onetel-theme/fonts/Montserrat/Montserrat-Bold.ttf);
+    font-weight: normal;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color;
+  background-color: $body-background;
+}
+
+h1 {
+  @include text(40px, bold, #fff);
+}
+
+h2 {
+  @include text(30px, 700, #fff);
+  line-height: 45px;
+}
+
+h3 {
+  @include text(24px, 700, #fff);
+}
+
+h4 {
+  @include text(18px, 700, $border-background);
+}
+
+p {
+  @include text(14px, 400, $text-color);
+  line-height: 22px;
+}
+
+a {
+  text-decoration: none;
+}

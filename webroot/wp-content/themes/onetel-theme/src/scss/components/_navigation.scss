@@ -9,7 +9,7 @@
   &.open {
     display: block;
   }
-  @include breakpoint(brian) {
+  @include chris {
     display: block;
     position: relative;
     top: 0;
@@ -19,13 +19,13 @@
     @include unstyle-list;
     padding-left: 10px;
     padding-right: 30px;
-    @include breakpoint(brian) {
+    @include chris {
       float: right;
       padding-right: 0;
     }
   }
   li {
-      @include breakpoint(brian) {
+      @include chris {
         display: inline-block;
       }
       a {
@@ -43,15 +43,16 @@
       background-color: $hover-text;
     }
   &::before {
+    @include animation;
     content: '';
     position: absolute;
-    top: -2px;
+    top: -6px;
     left: -6px;
     width: 6px;
-    height: 101%;
     background-color: $border-background;
-    @include breakpoint(brian) {
+    animation: scroll 0.9s 1 linear both;
+    @include chris {
       content: none;
     }
   }
-} 
+}

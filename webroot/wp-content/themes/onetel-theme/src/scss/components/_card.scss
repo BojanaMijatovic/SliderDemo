@@ -2,7 +2,7 @@
   @include flex-column;
   padding: 50px 30px;
   cursor: pointer;
-  transition: $transition;
+  transition: all $transition-timing-longer ease-in;
   &__title {
      padding: 10px 0;
   }
@@ -11,13 +11,13 @@
   }
   &--responsive {
      background-color: $card1-background;
-     @include breakpoint(meg) {
+     @include brian  {
        margin-right: 32px;
      }
    }
   &--easy {
      background-color: $button-hover;
-     @include breakpoint(chris) {
+     @include lois {
        margin-right: 32px;
      }
    }
@@ -25,7 +25,7 @@
      background-color: $card2-background;
      flex-grow: 2;
      margin-left: 0;
-     @include breakpoint (chris) {
+     @include lois {
        flex-grow: 0;
        margin-left: 32px;
      }

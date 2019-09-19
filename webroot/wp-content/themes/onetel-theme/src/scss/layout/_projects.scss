@@ -15,18 +15,20 @@
       background-color: $hover-text;
       opacity: .8;
       cursor: pointer;
-      transition: $transition;
+      transition: all $transition-timing-long ease-in;
       &:hover {
         opacity: 1;
       }
     }
     .page-id-28 & {
       padding-bottom: 80px;
-      &.wp-block-gallery.columns-3 li.blocks-gallery-item {
-        width: calc((100% - 32px )/4);
+      @include chris {
+        &.wp-block-gallery.columns-3 li.blocks-gallery-item {
+          width: calc((100% - 32px )/4);
+        }
       }
     }
-    @include breakpoint(chris) {
+    @include lois {
       padding: 0 15px;
     }
   }

@@ -1,5 +1,6 @@
 .startup {
   @include container;
+  @include padding;
   margin: 50px auto;
   .wp-block-media-text {
     &__media {

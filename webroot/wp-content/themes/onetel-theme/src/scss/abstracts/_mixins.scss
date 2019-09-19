@@ -12,9 +12,11 @@
 
 @mixin container {
   max-width: 1000px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
+}
+
+@mixin padding {
+  padding: $padding-global;
 }
 
 @mixin unstyle-list {
@@ -23,7 +25,7 @@
     padding: 0;
 }
 
-@mixin fullwidth {
+@mixin fullWidthPseudo {
   content: "";
   position: absolute;
   width: 100%;
@@ -61,4 +63,11 @@
  @mixin mail-border {
    background-color: $form-border;
    border-color: $form-border;
+ }
+
+ @mixin animation {
+   @keyframes scroll {
+     from {height: 0;}
+     to {height: 103%;}
+   }
  }

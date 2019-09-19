@@ -6,13 +6,17 @@
    Version: 1.0
 */
 
-// BASE
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+
+
+// ROOT
+@import 'root/variables';
 
 // ABSTRACTS
+@import 'abstracts/mixins';
+@import 'abstracts/fonts';
+
+// BASE
 @import 'base/base';
-@import 'base/typography';
 
 // COMPONENTS
 @import 'components/media';

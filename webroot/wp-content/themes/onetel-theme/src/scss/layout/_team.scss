@@ -1,10 +1,11 @@
 .team {
   @include container;
+  @include padding;
   &__column {
     &:nth-last-child(1) {
       padding-bottom: 80px;
     }
-    @include breakpoint(chris) {
+    @include lois {
       &.wp-block-column  {
         flex-basis: calc(100%/3 - 50px);
         padding-bottom: 80px;

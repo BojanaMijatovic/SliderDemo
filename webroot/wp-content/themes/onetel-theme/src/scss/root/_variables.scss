@@ -21,5 +21,12 @@ $form-focus: #404040;
 
 $text-color: #808080;
 
-$transition: all .4s ease-in;
+$transition-timing-longer: 0.5s;
+$transition-timing-long: .4s;
+$transition-timing-shorter: .3s;
+
 $white-border: 2px solid #fff;
+
+$padding-x: 10px;
+$padding-y: 15px;
+$padding-global: $padding-x $padding-y;

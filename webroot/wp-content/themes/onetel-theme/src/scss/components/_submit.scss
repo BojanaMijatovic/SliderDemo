@@ -5,7 +5,7 @@
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #fff;
   cursor: pointer;
-  transition: $transition;
+  transition: all $transition-timing-long ease-in;
   .newsleter & {
     text-transform: uppercase;
   }

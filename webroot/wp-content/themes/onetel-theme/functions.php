@@ -21,7 +21,6 @@ register_nav_menus(
     array(
       'top-menu' => __('Top Menu', 'theme'),
       'footer-menu' => __('Footer Menu', 'theme'),
-      'social-icons' => __('Social Icons Menu', 'theme')
     )
   );
 
@@ -36,6 +35,11 @@ register_nav_menus(
   );
   add_theme_support('custom-header', $args);
 
+register_sidebar( array(
+  'name'  => __('socials'),
+  'class' => 'footer__list',
+ )
+);
 
 
   add_filter('nav_menu_css_class', 'my_css_attributes_filter', 100, 1);

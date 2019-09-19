@@ -1,5 +1,6 @@
 .cards {
   @include container;
+  @include padding;
   @include flex-row;
   margin-top: -35px;
   margin-bottom: 30px;
@@ -8,7 +9,7 @@
   .wp-block-column:not(:first-child) {
     margin-left: 0;
   }
-  @include breakpoint (chris) {
+  @include lois {
     flex-wrap: nowrap;
    }
 }

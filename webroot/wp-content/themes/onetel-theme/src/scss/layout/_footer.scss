@@ -8,13 +8,31 @@
     @include unstyle-list;
     @include flex-row;
     justify-content: flex-start;
-  }
-  a {
-    color: #fff;
-    display: block;
-    padding: 20px 20px 20px 0;
+    a {
+      position: relative;
+      display: block;
+      margin-right: 5px;
+      padding: 20px;
+      background-color: $team-border;
+      color: #fff;
+      cursor: pointer;
+      transition: all $transition-timing-long ease-in;
+      &:hover {
+        background-color: $border-background;
+      }
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
   }
   p {
     color: $text-color;
+  }
+  .widget {
+    list-style-type: none;
+    margin-top: 10px;
   }
 }

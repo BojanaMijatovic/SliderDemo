@@ -3,10 +3,10 @@
   margin-right: 15px;
   padding: 9px 10px;
   cursor: pointer;
-  transition: all .5s ease-in;
+  transition: all $transition-timing-longer ease-in;
   background-color: $border-background;
   border: none;
-  @include breakpoint(brian) {
+  @include chris {
     display: none;
   }
   &__line {
