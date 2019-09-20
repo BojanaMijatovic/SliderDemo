@@ -1,0 +1,26 @@
+input {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  outline: none;
+  transition: all $transition-timing-shorter ease-in;
+  &.email {
+    width: 100%;
+    padding: 5px 10px;
+    color: #fff;
+    border: $white-border;
+    &:hover {
+      @include mail-border;
+    }
+    &:focus {
+      @include mail-border
+      box-shadow: 0 0 8px rgba(102,175,233,.6);
+    }
+  }
+   &.name {
+     @include contact-form;
+  }
+}
+
+textarea {
+ @include contact-form;
+}

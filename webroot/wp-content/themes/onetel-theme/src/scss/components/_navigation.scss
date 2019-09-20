@@ -1,0 +1,58 @@
+.nav {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 85px;
+  width: 100%;
+  background-color: $navigation-background;
+  border-top: 2px solid $nav-border;
+  &.open {
+    display: block;
+  }
+  @include chris {
+    display: block;
+    position: relative;
+    top: 0;
+    border-top: none;
+  }
+  &__menu {
+    @include unstyle-list;
+    padding-left: 10px;
+    padding-right: 30px;
+    @include chris {
+      float: right;
+      padding-right: 0;
+    }
+  }
+  li {
+      @include chris {
+        display: inline-block;
+      }
+      a {
+          @include text(13px, 400, $nav-border);
+          display: block;
+          padding: 5px 10px;
+          line-height: 40px;
+          text-transform: uppercase;
+          &:hover {
+            color: $card2-background;
+          }
+        }
+      }
+    .current-menu-item:active {
+      background-color: $hover-text;
+    }
+  &::before {
+    @include animation;
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 6px;
+    background-color: $border-background;
+    animation: scroll 0.9s 1 linear both;
+    @include chris {
+      content: none;
+    }
+  }
+}

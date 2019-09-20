@@ -1,0 +1,73 @@
+@mixin text($size: null, $weight: null, $color: null) {
+  @if $size != null {
+    font-size: $size;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $color != null {
+    color: $color;
+  }
+}
+
+@mixin container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@mixin padding {
+  padding: $padding-global;
+}
+
+@mixin unstyle-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin fullWidthPseudo {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: $information-color;
+  z-index: -2;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin contact-form {
+   width: 100%;
+   margin: 5px 0 30px;
+   padding: 15px;
+   background-color: $navigation-background;
+   border: none;
+   outline: none;
+   &:focus {
+     background-color: $form-focus;
+   }
+ }
+
+ @mixin mail-border {
+   background-color: $form-border;
+   border-color: $form-border;
+ }
+
+ @mixin animation {
+   @keyframes scroll {
+     from {height: 0;}
+     to {height: 103%;}
+   }
+ }

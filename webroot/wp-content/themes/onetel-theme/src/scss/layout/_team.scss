@@ -1,0 +1,42 @@
+.team {
+  @include container;
+  @include padding;
+  &__column {
+    &:nth-last-child(1) {
+      padding-bottom: 80px;
+    }
+    @include lois {
+      &.wp-block-column  {
+        flex-basis: calc(100%/3 - 50px);
+        padding-bottom: 80px;
+      }
+    }
+  }
+  &__title {
+    padding-top: 60px;
+  }
+  &__description {
+    padding-top: 30px;
+    max-width: 700px;
+  }
+  &__members {
+    @include flex-row;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  &__member {
+    @include flex-column;
+    flex-wrap: nowrap;
+    padding: 30px;
+    border: 2px solid $team-border;
+    &--name {
+      line-height: 75px;
+    }
+    &--job {
+      padding-bottom: 25px;
+    }
+    &.wp-block-media-text .wp-block-media-text__content {
+      padding-left: 0;
+    }
+  }
+}

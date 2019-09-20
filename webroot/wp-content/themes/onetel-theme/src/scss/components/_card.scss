@@ -1,0 +1,49 @@
+.card {
+  @include flex-column;
+  padding: 50px 30px;
+  cursor: pointer;
+  transition: all $transition-timing-longer ease-in;
+  &__title {
+     padding: 10px 0;
+  }
+  &__content {
+    color: #fff;
+  }
+  &--responsive {
+     background-color: $card1-background;
+     @include brian  {
+       margin-right: 32px;
+     }
+   }
+  &--easy {
+     background-color: $button-hover;
+     @include lois {
+       margin-right: 32px;
+     }
+   }
+  &--quick {
+     background-color: $card2-background;
+     flex-grow: 2;
+     margin-left: 0;
+     @include lois {
+       flex-grow: 0;
+       margin-left: 32px;
+     }
+   }
+  i {
+    padding: 30px 15px 30px 30px;
+    text-align: center;
+    color: #fff;
+    border: $white-border;
+    border-radius: 50%;
+  }
+  .fa-mobile-alt {
+    padding: 30px 26px 30px 38px;
+  }
+  .fa-life-ring {
+    padding: 30px 19px 30px 32px;
+  }
+  &:hover {
+    transform: translateY(-20px);
+  }
+ }

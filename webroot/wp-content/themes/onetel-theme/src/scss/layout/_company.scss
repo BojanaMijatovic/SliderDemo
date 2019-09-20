@@ -1,0 +1,68 @@
+.company {
+  @include container;
+  @include padding;
+  width: 90%;
+  padding: 0 0 80px;
+  border-top: 1px solid $team-border;
+  &__text {
+    padding-top: 70px;
+    &--title {
+      padding-bottom: 30px;
+    }
+    &--description {
+      padding-bottom: 10px;
+    }
+  }
+  &__work {
+    @include brian {
+      padding-top: 40px;
+    }
+  }
+  &__right {
+    position: relative;
+    padding: 30px 0;
+    &::after {
+      content: "100%";
+      position: absolute;
+      top: 20px;
+      right: 10px;
+    }
+    &--bootstrap {
+      &::after {
+        content: "80%";
+      }
+    }
+    &--ux {
+      &::after {
+        content: "70%";
+      }
+    }
+  }
+  &__line {
+    position: relative;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 90%;
+      background-color: $progress-bar1;
+    }
+    &--second {
+      &::after {
+        width: 85%;
+        background-color: $progress-bar2;
+      }
+    }
+    &--third {
+      &::after {
+        width: 80%;
+        background-color: $progress-bar3;
+      }
+    }
+  }
+}

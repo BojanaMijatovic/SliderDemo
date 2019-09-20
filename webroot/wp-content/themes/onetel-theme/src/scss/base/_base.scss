@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: -35px;
+  padding: 0;
+  max-width: 1300px;
+  transition: all .4s ease-in;
+  overflow-x: hidden;
+  &.push {
+    margin-top: 165px;
+  }
+}

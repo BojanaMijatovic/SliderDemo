@@ -1,0 +1,49 @@
+.informations {
+  @include container;
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  padding: 40px 15px;
+  background-color: $information-color;
+  &__title {
+    padding: 15px 0 20px;
+  }
+  &__contact {
+    a {
+      color: #999;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  &__link {
+    @include brian {
+      padding: 0 15px;
+    }
+  }
+  &__newsletter {
+    p {
+      max-width: 300px;
+    }
+  }
+  p  {
+    padding: 5px;
+  }
+  .wp-block-column:not(:first-child) {
+    margin-left: 0;
+  }
+  .wp-block-column:nth-child(2n) {
+    margin-left: 0;
+  }
+  @include meg {
+    &::before {
+      @include fullWidthPseudo;
+      left: -100%;
+    }
+    &::after {
+      @include fullWidthPseudo;
+      left: 100%;
+    }
+  }
+}

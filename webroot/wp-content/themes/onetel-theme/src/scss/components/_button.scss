@@ -1,0 +1,21 @@
+.button {
+  a {
+    @include text(13px, 700, #fff);
+    margin-top: 40px;
+    padding: 12px 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border: $white-border;
+    transition: all $transition-timing-longer ease-in;
+    .startup & {
+      text-transform: uppercase;
+    }
+    .projects & {
+      margin-bottom: 40px;
+    }
+    &:hover {
+      background-color: $button-hover;
+      border-color: $button-hover;
+      color: $hover-text;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.projects {
+  @include container;
+  &__title {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  &__description {
+    padding-bottom: 40px;
+    max-width: 700px;
+  }
+  &__gallery.wp-block-gallery {
+    padding: 0;
+    & li.blocks-gallery-item {
+      margin: 0;
+      background-color: $hover-text;
+      opacity: .8;
+      cursor: pointer;
+      transition: all $transition-timing-long ease-in;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .page-id-28 & {
+      padding-bottom: 80px;
+      @include chris {
+        &.wp-block-gallery.columns-3 li.blocks-gallery-item {
+          width: calc((100% - 32px )/4);
+        }
+      }
+    }
+    @include lois {
+      padding: 0 15px;
+    }
+  }
+  &.button {
+    margin-bottom: 40px;
+  }
+}

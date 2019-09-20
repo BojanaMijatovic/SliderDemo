@@ -1,0 +1,30 @@
+.burger {
+  position: relative;
+  margin-right: 15px;
+  padding: 9px 10px;
+  cursor: pointer;
+  transition: all $transition-timing-longer ease-in;
+  background-color: $border-background;
+  border: none;
+  @include chris {
+    display: none;
+  }
+  &__line {
+    display: block;
+    float: right;
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 4px;
+  }
+  &--first {
+    clear: both;
+  }
+  &--second {
+    clear: both;
+  }
+  &--third {
+    clear: both;
+    margin-bottom: 0;
+  }
+}

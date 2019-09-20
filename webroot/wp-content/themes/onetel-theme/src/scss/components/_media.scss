@@ -1,0 +1,44 @@
+// MEDIA Queries
+$smaller-width: 520px;
+$small-width: 600px;
+$tablet-width: 768px;
+$large-width: 862px;
+$larger-width: 992px;
+$desktop-width: 1024px;
+
+
+@mixin stewie {
+  @media (min-width: #{$smaller-width}) {
+    @content;
+  }
+}
+
+@mixin brian {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin chris {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin meg {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
+@mixin lois {
+  @media (min-width: #{$larger-width}) {
+    @content;
+  }
+}
+
+@mixin peter {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

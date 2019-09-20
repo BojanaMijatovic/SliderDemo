@@ -1,0 +1,41 @@
+/*!
+   Theme Name: Onteel theme
+   Theme URI: https://wordpress.org/themes/onetel-theme/
+   Author: Bojana
+   Description: Gutenber and Slider Demo
+   Version: 1.0
+*/
+
+
+
+// ROOT
+@import 'root/variables';
+
+// ABSTRACTS
+@import 'abstracts/mixins';
+@import 'abstracts/fonts';
+
+// BASE
+@import 'base/base';
+
+// COMPONENTS
+@import 'components/media';
+@import 'components/burger';
+@import 'components/navigation';
+@import 'components/slider';
+@import 'components/card';
+@import 'components/button';
+@import 'components/submit';
+@import 'components/form';
+
+
+//LAYOUT
+@import 'layout/header';
+@import 'layout/cards';
+@import 'layout/startup';
+@import 'layout/projects';
+@import 'layout/informations';
+@import 'layout/team';
+@import 'layout/company';
+@import 'layout/contact';
+@import 'layout/footer';

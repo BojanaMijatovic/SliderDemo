@@ -1,0 +1,26 @@
+.startup {
+  @include container;
+  @include padding;
+  margin: 50px auto;
+  .wp-block-media-text {
+    &__media {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    &__content {
+      padding: 40px 30px;
+      background-color: $primary-color;
+    }
+  }
+  &__title {
+    padding-bottom: 15px;
+  }
+  &__description {
+    padding-bottom: 10px;
+    &--second {
+      padding-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.cards {
+  @include container;
+  @include padding;
+  @include flex-row;
+  margin-top: -35px;
+  margin-bottom: 30px;
+  text-align: center;
+  transform: translateZ(10px);
+  .wp-block-column:not(:first-child) {
+    margin-left: 0;
+  }
+  @include lois {
+    flex-wrap: nowrap;
+   }
+}
